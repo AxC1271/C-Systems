@@ -1,7 +1,6 @@
 # C Systems Programming — RISC-V Stack
 
-Low-level C projects built from scratch as the software foundation
-for a self-designed 2-way superscalar RISC-V SoC.
+Self-directed C systems programming projects — shells, allocators, kernels, and drivers — built as the software foundation for a custom RISC-V superscalar SoC.
 
 ## Projects
 
