@@ -15,7 +15,7 @@ void uart_init(void) {
     RCC_APB2ENR |= (1 << 3) | (1 << 14);
     GPIOB_CRL &= ~(0xF << 24);
     GPIOB_CRL |=  (0xA << 24);
-    USART1_BRR = 0x457;          
+    USART1_BRR = 0x457;   
     USART1_CR1 |= USART_CR1_UE | USART_CR1_TE;
 }
 
