@@ -6,6 +6,11 @@
 // rcc base address and registers (clock enable)
 #define RCC_BASE    0x40021000
 #define RCC_APB2ENR (*(volatile uint32_t*)(RCC_BASE + 0x18))
+#define RCC_CR     (*(volatile uint32_t*)(RCC_BASE + 0x00))
+#define RCC_CFGR   (*(volatile uint32_t*)(RCC_BASE + 0x04))
+
+#define AFIO_BASE  0x40010000
+#define AFIO_MAPR  (*(volatile uint32_t*)(AFIO_BASE + 0x04))
 
 // gpiob base address and registers (for pb6 tx pin)
 #define GPIOB_BASE  0x40010C00

@@ -1,6 +1,5 @@
 #include <stdint.h>
 
-// defined by linker script
 extern uint32_t _sdata, _edata, _sidata;
 extern uint32_t _sbss, _ebss;
 
@@ -22,13 +21,11 @@ void reset_handler(void) {
 
     // call main
     main();
-
-    // if main returns, loop forever
     while(1);
 }
 
 __attribute__((section(".vector_table")))
 uint32_t vector_table[] = {
-    0x20005000,              // initial stack pointer (top of RAM)
+    0x20005000,             
     (uint32_t)(uintptr_t)reset_handler
 };
